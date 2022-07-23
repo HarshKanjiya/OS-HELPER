@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity_dd"
+    android:orientation="vertical"
+    android:background="@color/ofwhite"
+    android:layout_margin="9dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="25dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Number of process :"
+            android:textSize="25sp"
+            android:textFontWeight="400"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:textSize="25sp"
+            android:layout_marginTop="9dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textFontWeight="400"
+            android:letterSpacing="0.01"
+            android:fontFamily="sans-serif"
+            android:text="Enter Allocations :"/>
+        <EditText
+            android:id="@+id/allocations"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:hint=" eg 710,200,303,211"
+            android:letterSpacing="0.1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textFontWeight="400"
+            android:letterSpacing="0.01"
+            android:textSize="25sp"
+            android:text="Enter Requests :"/>
+        <EditText
+            android:id="@+id/requests"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:hint=" eg 000,202,000,100"
+            android:letterSpacing="0.1"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resources are set to 3 by default for lower complexity"
+        android:gravity="center"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="25dp">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnClear"
+            app:neumorph_shadowColorLight="@color/shadowLight"
+            app:neumorph_shadowColorDark="@color/shadowDark"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="CLEAR"
+            android:textAlignment="center"
+            android:letterSpacing=".04"
+            android:textColor="@color/ofwhite"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textFontWeight="450"
+            app:neumorph_backgroundColor="#FB3A3A"
+            app:neumorph_shapeType="flat" />
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnSubmit"
+            app:neumorph_shadowColorLight="@color/shadowLight"
+            app:neumorph_shadowColorDark="@color/shadowDark"
+            android:textFontWeight="400"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="SUBMIT"
+            android:letterSpacing="0.17"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            app:neumorph_shapeType="flat"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

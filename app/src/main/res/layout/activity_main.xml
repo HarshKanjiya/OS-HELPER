@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ofwhite"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_margin="3dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            >
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/btnFCFS"
+                android:fontFamily="sans-serif-medium"
+                app:neumorph_shadowColorLight="@color/shadowLight"
+                app:neumorph_shadowColorDark="@color/shadowDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:text="FCFS"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/gray"
+                android:layout_margin="4dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            >
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/btnFirstFit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="First Fit"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/gray"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-medium"
+                app:neumorph_shadowColorLight="@color/shadowLight"
+                app:neumorph_shadowColorDark="@color/shadowDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            >
+
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/btnBestFit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Best Fit"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/gray"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-medium"
+                app:neumorph_shadowColorLight="@color/shadowLight"
+                app:neumorph_shadowColorDark="@color/shadowDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            >
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/btnWorstFit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Worst Fit"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/gray"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-medium"
+                app:neumorph_shadowColorLight="@color/shadowLight"
+                app:neumorph_shadowColorDark="@color/shadowDark"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
